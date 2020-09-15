@@ -172,6 +172,9 @@ sed -i "s/^#   - role:database$/#   - role:database\n$DD_TAGS_YAML/" "$DATADOG_C
 # Agent versions 6.12 and later:
 sed -i "s/^\(## @param tags\)/$DD_TAGS_YAML\n\1/" "$DATADOG_CONF"
 
+echo "DATADOG_CONF....."
+cat $DATADOG_CONF
+echo "..."
 # Export host type as dyno
 export DD_HEROKU_DYNO="true"
 
