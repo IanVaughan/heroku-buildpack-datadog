@@ -219,3 +219,5 @@ else
     bash -c "PYTHONPATH=\"$DD_PYTHONPATH\" LD_LIBRARY_PATH=\"$DD_LD_LIBRARY_PATH\" $DD_DIR/embedded/bin/process-agent -config $DATADOG_CONF 2>&1 &"
   fi
 fi
+
+ps aux
